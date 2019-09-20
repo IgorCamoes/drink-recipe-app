@@ -8,7 +8,7 @@ const Search = ({match}) =>{
 
     const [search, setSearch] = useState([]);
 
-    const searchButton = document.querySelector('main button:first-child');
+    
 
     const fetchSearch = async () =>{
         const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${query}`);
@@ -18,9 +18,7 @@ const Search = ({match}) =>{
 
     useEffect(() =>{
         fetchSearch();
-    }, []);
-
-    // searchButton.onclick = fetchSearch();
+    });
     
     if(search !== null){
         return(

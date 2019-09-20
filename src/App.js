@@ -5,8 +5,9 @@ import logoGit from './img/github.svg';
 import logoHome from './img/cocktail.png';
 import logoIn from './img/linkedin.svg';
 
-import Search from './search';
 import DrinkPage from './drinkPage';
+import Random from './random';
+import Search from './search';
 
 function Home (){
   const [drinks, setDrinks] = useState([]);
@@ -63,13 +64,16 @@ function App() {
             <Link to={`/search/${query}`}>
               <button>Search</button>
             </Link>
-            <button>Random</button>
+            <Link to='/random'>
+              <button>Random</button>
+            </Link>
           </div>
         </main>
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/drinks/:id' component={DrinkPage} />
           <Route path='/search/:query' component={Search} />
+          <Route patch='/random' component={Random} />
         </Switch>
         
 
