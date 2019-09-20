@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2cad5170765ad4e86f1963a09e701a76",
+    "revision": "198775a6ce089ceb44b72459b9e0dbda",
     "url": "/drink-recipe-app/index.html"
   },
   {
-    "revision": "64833d83647233a5b947",
+    "revision": "29524a6d8a49f77bab1f",
     "url": "/drink-recipe-app/static/css/main.41f57fa0.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/drink-recipe-app/static/js/2.5537d399.chunk.js"
   },
   {
-    "revision": "64833d83647233a5b947",
-    "url": "/drink-recipe-app/static/js/main.900b2e60.chunk.js"
+    "revision": "29524a6d8a49f77bab1f",
+    "url": "/drink-recipe-app/static/js/main.ea83fc9f.chunk.js"
   },
   {
     "revision": "023f61cce5e4c713c16c",
