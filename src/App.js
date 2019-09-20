@@ -1,11 +1,14 @@
 import React, {useState, useEffect} from 'react';
-import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
+import {HashRouter as Router, Link, Switch, Route} from 'react-router-dom';
 import './App.css';
-import logoGit from './img/github.svg'
-import logoIn from './img/linkedin.svg'
+import logoGit from './img/github.svg';
+import logoHome from './img/cocktail.png';
+import logoIn from './img/linkedin.svg';
 
-function App() {
+import Search from './search';
+import DrinkPage from './drinkPage';
 
+function Home (){
   const [drinks, setDrinks] = useState([]);
   
 
@@ -24,33 +27,55 @@ function App() {
     getDrinks();
   }, []);
 
+  return(
+    <div>
+          {drinks.map(drink =>(
+            <Link style={{textDecoration: 'none'}} to={`/drinks/${drink.idDrink}`}>
+              <div className='drinkDisplay' data-id={drink.idDrink}>
+                <h2 key={drink.drinkId}>{drink.strDrink}</h2>
+                <div>
+                  <img className='drinkImg' src={drink.strDrinkThumb} alt=""/>
+                </div>
+              </div>
+            </Link>
+          ))};
+    </div>
+  )
+}
+
+function App() {
+
+  const [query, setQuery] = useState('');
+  
+  const changeSearch = (e) =>{
+    setQuery(e.target.value);
+  }
 
   return (
     <Router>
       <div className="app">
         <main>
           <div>
-            <input type="text" placeholder="Search for a drink"/>
-            <button type="submit">Search</button>
+            <Link to='/'>
+              <img src={logoHome} alt=""/>
+            </Link>
+            <input onChange={changeSearch} type="text" placeholder="Search for a drink"/>
+            <Link to={`/search/${query}`}>
+              <button>Search</button>
+            </Link>
             <button>Random</button>
           </div>
         </main>
-      
-        <div>
-          {drinks.map(drink =>(
-
-            <div className='drinkDisplay' data-id={drink.idDrink}>
-              <h2 key={drink.drinkId}>{drink.strDrink}</h2>
-              <div>
-                <img className='drinkImg' src={drink.strDrinkThumb} alt=""/>
-              </div>
-            </div>
-          ))};
-        </div>
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/drinks/:id' component={DrinkPage} />
+          <Route path='/search/:query' component={Search} />
+        </Switch>
+        
 
         <footer>
           <div>
-            <p>Made with ☕ and 🎶 by Igor Camões</p>
+            <p>Made with <span role='img'>☕</span> and <span role='img'>🎶</span> by Igor Camões</p>
           </div>
           <div>
             <a href="https://github.com/IgorCamoes">

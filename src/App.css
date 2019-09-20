@@ -25,7 +25,7 @@
 }
 
 main{
-  align-items: center;
+  align-items: flex-end;
   display: flex;
   height: 10vh;
   justify-content: center;
@@ -129,6 +129,7 @@ footer{
   flex-direction: column;
   height: 25vh;
   justify-content: center;
+  margin-top: 10px;
   width: 100%;
 }
 
