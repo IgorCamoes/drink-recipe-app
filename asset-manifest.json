@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/drink-recipe-app/static/css/main.41f57fa0.chunk.css",
-    "main.js": "/drink-recipe-app/static/js/main.61c9e066.chunk.js",
-    "main.js.map": "/drink-recipe-app/static/js/main.61c9e066.chunk.js.map",
+    "main.css": "/drink-recipe-app/static/css/main.4fb59df5.chunk.css",
+    "main.js": "/drink-recipe-app/static/js/main.72ba0fcd.chunk.js",
+    "main.js.map": "/drink-recipe-app/static/js/main.72ba0fcd.chunk.js.map",
     "runtime~main.js": "/drink-recipe-app/static/js/runtime~main.a2d3bf3f.js",
     "runtime~main.js.map": "/drink-recipe-app/static/js/runtime~main.a2d3bf3f.js.map",
-    "static/js/2.85f6c749.chunk.js": "/drink-recipe-app/static/js/2.85f6c749.chunk.js",
-    "static/js/2.85f6c749.chunk.js.map": "/drink-recipe-app/static/js/2.85f6c749.chunk.js.map",
+    "static/js/2.8c89a7e8.chunk.js": "/drink-recipe-app/static/js/2.8c89a7e8.chunk.js",
+    "static/js/2.8c89a7e8.chunk.js.map": "/drink-recipe-app/static/js/2.8c89a7e8.chunk.js.map",
     "index.html": "/drink-recipe-app/index.html",
-    "precache-manifest.3c39c41ebe7196f350b9957db98204aa.js": "/drink-recipe-app/precache-manifest.3c39c41ebe7196f350b9957db98204aa.js",
+    "precache-manifest.ecb01065fe22a203cabd5e2259c1d188.js": "/drink-recipe-app/precache-manifest.ecb01065fe22a203cabd5e2259c1d188.js",
     "service-worker.js": "/drink-recipe-app/service-worker.js",
-    "static/css/main.41f57fa0.chunk.css.map": "/drink-recipe-app/static/css/main.41f57fa0.chunk.css.map",
+    "static/css/main.4fb59df5.chunk.css.map": "/drink-recipe-app/static/css/main.4fb59df5.chunk.css.map",
     "static/media/index.css": "/drink-recipe-app/static/media/bg1.7a45aee8.jpg",
     "static/media/github.svg": "/drink-recipe-app/static/media/github.76d344f0.svg",
     "static/media/linkedin.svg": "/drink-recipe-app/static/media/linkedin.698ddeaf.svg"
